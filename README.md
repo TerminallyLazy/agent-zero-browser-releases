@@ -18,8 +18,10 @@ fix for decoding successful browser-operation results, preventing
 a completed Chrome action from losing its reply. Both architecture slices are
 signed and notarized. Actual update, installed status and doctor returned
 `INSTALL_VERIFIED` on Apple Silicon, preserving pairing and one Chrome
-registration; Chrome launched 2.12.1 and Core reconciliation succeeded.
-This is not a post-update end-to-end browser-operation acceptance claim.
+registration; Chrome launched the installed 2.12.2 companion.
+The latest live check is blocked during Core connection reconciliation, before
+any browser action is sent. Installation is verified, but end-to-end browser
+operation acceptance is not yet complete.
 Intel installation remains separately unverified. Earlier incomplete or broken
 distributions are not fallbacks.
 
