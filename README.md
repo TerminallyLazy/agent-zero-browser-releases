@@ -14,9 +14,12 @@ No administrator password is needed. Pair the production extension once afterwar
 
 Version 2.12.1 fixes decoding of successful browser-operation results, preventing
 a completed Chrome action from losing its reply. Both architecture slices are
-signed and notarized. Installation and live control acceptance are separate
-from package verification; the previous 2.12.0 r2 installation passed native
-status and doctor on Apple Silicon. The earlier r1 installer is not a fallback.
+signed and notarized. Actual update, installed status and doctor returned
+`INSTALL_VERIFIED` on Apple Silicon, preserving pairing and one Chrome
+registration; Chrome launched 2.12.1 and Core reconciliation succeeded.
+This is not a post-update end-to-end browser-operation acceptance claim.
+Intel installation remains separately unverified. Earlier incomplete or broken
+distributions are not fallbacks.
 
 The Chrome Web Store item is still a draft. Windows and Linux packages are not
 yet available; they remain required work, not implied support. This Mac package
