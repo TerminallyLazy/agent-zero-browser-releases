@@ -2,6 +2,24 @@
 
 ## macOS companion 2.12.0
 
+### Corrected r2 distribution
+
+`native-v2.12.0-macos-r2` contains the corrected CodeDirectory parser, signed
+universal2 executable, stapled setup DMG and strict one-file payload. Apple
+submission `46ed0eb5-eb57-471a-a07b-c4d607729f71` was accepted without issues.
+The publisher and independent builder signatures, both artifact hashes, strict
+payload extraction and the executable's explicit notarization requirement
+passed before publication. Installation acceptance is recorded separately on
+the default-branch README after actual installed-state verification.
+
+- Installer SHA-256: `a69805cf50befaac0aaab9504dc07fc17135a1af078fae78a5df22817f635d58`
+- Payload SHA-256: `f9ca468982794f3a767cdfe2d06f1fc308202d27c7c7d8f383e4a3e108d25482`
+- Executable SHA-256: `8f8125212bcafa3ead9e8f44c3dc8bc7213ee9f44570dd63638a242f3b067b6f`
+- Catalog SHA-256: `9758f715d7648ee2246c82dc3e9a3574dfc55c07cad24d629166e0cd40ef35e4`
+- Source commit: `b6b985f848c2f0c6ccd55b61333ed3f95ead40f1` in the companion integration PR branch.
+
+### Historical r1 distribution
+
 **r1 installation defect:** actual installation subsequently exposed a
 CodeDirectory flags parser issue. It fails closed before registration or state
 mutation. The earlier publication checks below did not establish installation
