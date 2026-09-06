@@ -1,5 +1,23 @@
 # Release verification and availability
 
+## macOS companion 2.12.1
+
+`native-v2.12.1-macos` fixes canonical successful-operation decoding, including
+the required bounded `completed_at_ms` field. The signed universal2 executable,
+stapled setup DMG, strict payload, publisher catalog and independent build
+provenance were verified. Apple submission
+`a7e666c2-71ed-4247-994f-1b6bbf862b20` was accepted without issues.
+
+- Installer SHA-256: `9c699fc13f1f0453c41655b7c069eddea083a3b2eadf260297b6b55afecb5021`
+- Payload SHA-256: `e575592eec2bfc08ffe0bb2852e3d499e2f7370da8227ebf4ed90d9fe005ddb4`
+- Executable SHA-256: `712924d559e52ebc89d1c4cd5faefbe25466860f4268aeb05d8314b560930b18`
+- Catalog SHA-256: `c4671be61c26f72eb7cddb284f41b3dc0a2ec9f0a59e433d09ef1a109f9cd8cd`
+- Source commit: `a8f89fbb7cdaad4b08db327f45cac9d9a8116ad4` in the companion integration PR branch.
+
+The security floor remains 2.12.0. Older immutable releases are retained;
+installing this update preserves the existing native identity and pairing.
+Package verification alone does not establish live control acceptance.
+
 ## macOS companion 2.12.0
 
 ### Corrected r2 distribution
