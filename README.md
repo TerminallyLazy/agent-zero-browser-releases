@@ -6,10 +6,11 @@ release-verification metadata maintained by
 
 ## Current availability
 
-The **macOS 13+ companion 2.12.0** is available for Intel and Apple Silicon:
-[Download Mac setup](https://raw.githubusercontent.com/TerminallyLazy/agent-zero-browser-releases/native-v2.12.0-macos-r1/v2.12.0/a0-browser-bridge-2.12.0-macos-universal2.dmg).
-Open the disk image, open Agent Zero Browser Setup, then choose Install.
-No administrator password is needed. Pair the production extension once afterward.
+The macOS installer is temporarily unavailable while a corrected signed release
+is prepared. The original `native-v2.12.0-macos-r1` package stops at a signature
+metadata parser check before installation; do not use it for a fresh install.
+Its published bytes remain immutable for auditability. A replacement will be
+linked only after installation and installed-state verification succeed.
 
 The Chrome Web Store item is still a draft. Windows and Linux packages are not
 yet available; they remain required work, not implied support. This Mac package

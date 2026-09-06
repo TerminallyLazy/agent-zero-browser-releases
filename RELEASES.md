@@ -2,6 +2,12 @@
 
 ## macOS companion 2.12.0
 
+**r1 installation defect:** actual installation subsequently exposed a
+CodeDirectory flags parser issue. It fails closed before registration or state
+mutation. The earlier publication checks below did not establish installation
+acceptance. Do not use r1 for a fresh install; its tag is retained unchanged.
+A corrected distribution is being prepared under a new immutable revision.
+
 The `native-v2.12.0-macos-r1` tag contains the signed/stapled macOS 13+ universal2
 setup DMG and strict one-file gzip payload. Apple notarization submission
 `7bf965a8-30a9-4358-8e3b-03af946dd487` was accepted with no issues. The real native
