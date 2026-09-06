@@ -1,0 +1,6 @@
+# Public repository: stage only reviewed documentation by default.
+# Signed downloads are published as reviewed release assets, not blanket copies.
+*
+!.gitignore
+!README.md
+!RELEASES.md
