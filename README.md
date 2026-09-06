@@ -6,16 +6,20 @@ release-verification metadata maintained by
 
 ## Current availability
 
-**No production installer is available here yet.** The Chrome Web Store item
-is a draft, and the production release is still being prepared. Do not treat
-a signed candidate, successful pairing, or a development build as full browser
-control. Unfinished private development packages have not been copied here.
+The **macOS 13+ companion 2.12.0** is available for Intel and Apple Silicon:
+[Download Mac setup](https://raw.githubusercontent.com/TerminallyLazy/agent-zero-browser-releases/native-v2.12.0-macos-r1/v2.12.0/a0-browser-bridge-2.12.0-macos-universal2.dmg).
+Open the disk image, open Agent Zero Browser Setup, then choose Install.
+No administrator password is needed. Pair the production extension once afterward.
 
-When a verified release is ready, packages and their version-specific signing,
-checksum and provenance metadata will appear under
-[Releases](https://github.com/TerminallyLazy/agent-zero-browser-releases/releases).
-Downloads will not require a GitHub account. Platform availability will be
-explicit: a Mac release does not imply Windows or Linux availability.
+The Chrome Web Store item is still a draft. Windows and Linux packages are not
+yet available; they remain required work, not implied support. This Mac package
+does not mark the cross-platform overhaul or full live browser acceptance complete.
+Existing development pairing is separate and is not silently migrated.
+
+Downloads require no GitHub account. Exact version paths use an update/delete-
+protected tag. The installer authenticates its catalog and payload and requires
+independent build provenance plus Apple's signing/notarization checks before
+registering the companion. See [release verification](RELEASES.md).
 
 The native companion belongs on the computer running Chrome, including when
 Agent Zero runs in Docker. Do not install it inside the Agent Zero container.
