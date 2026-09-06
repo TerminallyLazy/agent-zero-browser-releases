@@ -1,5 +1,24 @@
 # Release verification and availability
 
+## macOS companion 2.12.3
+
+`native-v2.12.3-macos` fixes the opposite-direction result/event queue overflow.
+The queue stays at eight slots with one retained producer packet and at most
+one second of FIFO backpressure. Worker state, transport deadlines, cancellation
+and clean native EOF remain enforced. Ten focused queue/framing tests passed.
+Apple submission `937428ac-4ecb-40b3-bc4f-3e8d39d8deff` was accepted, and the
+Developer ID signed universal2 setup DMG was stapled and verified.
+
+- Installer SHA-256: `dffe50049328a667869349a418502eab2175fefb5da4386f82933e167eda7438`
+- Payload SHA-256: `ea3291999470a548b90bdcd1f82b90707364fa18e3f08938e6564b7457e2b127`
+- Executable SHA-256: `803a24e87f2568c5fbb1c9f5de400bd3b8aab60a16a6ac70f3814be4494f482b`
+- Catalog SHA-256: `a40176dcd2048e692996b3ba4f5bf5218fe5ab98fca085f85eaa6cbe9a9ebd29`
+- Source commit: `30fa11aaa1649c7347dba971d0adbd4259b12e7a`
+
+Publisher and independent builder signatures verified. This repairs a
+reproduced defect, not a proven explanation for every live disconnect.
+Installation and live browser acceptance are recorded separately.
+
 ## macOS companion 2.12.2
 
 `native-v2.12.2-macos` replaces immediate valid-message queue overflow failure

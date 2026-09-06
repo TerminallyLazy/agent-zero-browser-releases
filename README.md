@@ -6,20 +6,21 @@ release-verification metadata maintained by
 
 ## Current availability
 
-The **macOS 13+ companion 2.12.2** is available for Intel and
+The **macOS 13+ companion 2.12.3** is available for Intel and
 Apple Silicon:
-[Download Mac setup](https://raw.githubusercontent.com/TerminallyLazy/agent-zero-browser-releases/native-v2.12.2-macos/v2.12.2/a0-browser-bridge-2.12.2-macos-universal2.dmg).
+[Download Mac setup](https://raw.githubusercontent.com/TerminallyLazy/agent-zero-browser-releases/native-v2.12.3-macos/v2.12.3/a0-browser-bridge-2.12.3-macos-universal2.dmg).
 Open the disk image, open Agent Zero Browser Setup, then choose Install.
 No administrator password is needed. Pair the production extension once afterward.
 
-Version 2.12.2 adds bounded handling of valid message bursts so a briefly full
-receive queue does not immediately disconnect control. It retains the 2.12.1
+Version 2.12.3 adds bounded handling of valid reply/event bursts, including
+prompt cancellation when Chrome closes the native port. It retains the 2.12.2
+inbound queue correction and the 2.12.1
 fix for decoding successful browser-operation results, preventing
 a completed Chrome action from losing its reply. Both architecture slices are
-signed and notarized. Actual update, installed status and doctor returned
+signed and notarized. The previous 2.12.2 update, installed status and doctor returned
 `INSTALL_VERIFIED` on Apple Silicon, preserving pairing and one Chrome
 registration; Chrome launched the installed 2.12.2 companion.
-The latest live check is blocked during Core connection reconciliation, before
+2.12.3 installation has not yet been verified. The latest live check is blocked during Core connection reconciliation, before
 any browser action is sent. Installation is verified, but end-to-end browser
 operation acceptance is not yet complete.
 Intel installation remains separately unverified. Earlier incomplete or broken
