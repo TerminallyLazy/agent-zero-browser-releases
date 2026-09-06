@@ -17,12 +17,12 @@ prompt cancellation when Chrome closes the native port. It retains the 2.12.2
 inbound queue correction and the 2.12.1
 fix for decoding successful browser-operation results, preventing
 a completed Chrome action from losing its reply. Both architecture slices are
-signed and notarized. The previous 2.12.2 update, installed status and doctor returned
+signed and notarized. The 2.12.3 native update and independent installed CLI status returned
 `INSTALL_VERIFIED` on Apple Silicon, preserving pairing and one Chrome
-registration; Chrome launched the installed 2.12.2 companion.
-2.12.3 installation has not yet been verified. The latest live check is blocked during Core connection reconciliation, before
-any browser action is sent. Installation is verified, but end-to-end browser
-operation acceptance is not yet complete.
+registration; Chrome launched the installed 2.12.3 companion.
+Installation is verified. The previous live check was blocked during Core
+connection reconciliation before any browser action was sent; acceptance with
+the new companion is pending, not implied by successful installation.
 Intel installation remains separately unverified. Earlier incomplete or broken
 distributions are not fallbacks.
 
