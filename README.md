@@ -8,7 +8,7 @@ release-verification metadata maintained by
 
 The **macOS 13+ companion 2.12.1** is available for Intel and
 Apple Silicon:
-[Download Mac setup](https://raw.githubusercontent.com/TerminallyLazy/agent-zero-browser-releases/native-v2.12.1-macos/v2.12.1/a0-browser-bridge-2.12.1-macos-universal2.dmg).
+[Download Mac setup](https://raw.githubusercontent.com/TerminallyLazy/agent-zero-browser-releases/native-v2.12.1-macos-r2/v2.12.1/a0-browser-bridge-2.12.1-macos-universal2.dmg).
 Open the disk image, open Agent Zero Browser Setup, then choose Install.
 No administrator password is needed. Pair the production extension once afterward.
 
