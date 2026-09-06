@@ -1,5 +1,25 @@
 # Release verification and availability
 
+## macOS companion 2.12.2
+
+`native-v2.12.2-macos` replaces immediate valid-message queue overflow failure
+with bounded backpressure. FIFO, fixed capacity, cancellation and current
+heartbeat/renewal deadlines remain enforced. Fixed-code stderr diagnostics
+contain no payloads or credentials. Two focused transport regressions passed.
+Both Mac slices are Developer ID signed; Apple submission
+`12261607-3ecd-48ca-a516-b9fa514d324d` was accepted and the setup DMG stapled.
+
+- Installer SHA-256: `2b33f34ef3e13f520a391977369ec449e4762b9e9c2b0208f7ed257ac5c33577`
+- Payload SHA-256: `2681377a297d9943a069b245587a40cdb727c8d8119a733116df3c3eecf6088c`
+- Executable SHA-256: `8cb84de1e66bbd52771b534cb1bfc83d69eb94ebc87b3f7669547bff68359080`
+- Catalog SHA-256: `f403678be1077192cc10930f3f1a2a43a55abfdaf0d8ba0615f2780153f046ab`
+- Source commit: `c6d54842e2b9ffd467a029a7f68b10902b04af7f`
+
+Publisher catalog and independent builder provenance verification passed.
+This fixes a reproduced transport defect, but does not prove the cause of every
+historical disconnect. Installation and end-to-end browser acceptance remain
+separate from package verification.
+
 ## macOS companion 2.12.1
 
 `native-v2.12.1-macos-r2` fixes canonical successful-operation decoding, including
